@@ -1,0 +1,803 @@
+{
+  "metadata": {
+    "members": {
+      "admin": "[Eternal∞DIVA]CCT",
+      "testers": [
+        "[E∞D]Simpleton台湾",
+        "LLC♪",
+        "[Eternal∞DIVA]CCT"
+      ],
+      "techSupport": [
+        "とい",
+        "華麗なるおとうとくん★"
+      ]
+    },
+    "lastUpdated": "2025-12-31"
+  },
+  "range": [
+    {
+      "from": 0,
+      "to": 14.77,
+      "label": "Acute台",
+      "labelKey": "acute"
+    },
+    {
+      "from": 14.77,
+      "to": 22.73,
+      "label": "強saturator台",
+      "labelKey": "strongSaturator"
+    },
+    {
+      "from": 22.73,
+      "to": 32.95,
+      "label": "中saturator台",
+      "labelKey": "mediumSaturator"
+    },
+    {
+      "from": 32.95,
+      "to": 38.64,
+      "label": "弱saturator台",
+      "labelKey": "weakSaturator"
+    },
+    {
+      "from": 38.64,
+      "to": 50,
+      "label": "DYE台",
+      "labelKey": "dye"
+    },
+    {
+      "from": 50,
+      "to": 60.23,
+      "label": "Nyanko台",
+      "labelKey": "nyanko"
+    },
+    {
+      "from": 54.55,
+      "to": 61.36,
+      "label": "愛言葉台",
+      "labelKey": "aikotoba"
+    },
+    {
+      "from": 60.23,
+      "to": 68.18,
+      "label": "MOP台",
+      "labelKey": "mop"
+    },
+    {
+      "from": 68.18,
+      "to": 72.73,
+      "label": "強警察台",
+      "labelKey": "strongPolice"
+    },
+    {
+      "from": 72.73,
+      "to": 78.41,
+      "label": "弱警察台",
+      "labelKey": "weakPolice"
+    },
+    {
+      "from": 78.41,
+      "to": 84.09,
+      "label": "LNGN台",
+      "labelKey": "lngn"
+    },
+    {
+      "from": 75,
+      "to": 100,
+      "label": "Odds台",
+      "labelKey": "odds"
+    },
+    {
+      "from": 84.09,
+      "to": 100,
+      "label": "Sound台",
+      "labelKey": "sound"
+    }
+  ],
+  "data": [
+    {
+      "ids": {
+        "keychip": "A69E-01A15035612",
+        "main": "AAVE-01A17665611"
+      },
+      "store": "哈拉星球饒河店",
+      "position": "",
+      "nickname": "饒河",
+      "area": "臺北",
+      "enStore": "HALA PLANET (RAOHE)",
+      "enPosition": "",
+      "lat": 25.05071121905697,
+      "lng": 121.57702563825274,
+      "ranges": [
+        {
+          "min": 26.14,
+          "max": 29.55
+        }
+      ],
+      "weakRanges": [],
+      "type": {
+        "zh-TW": "中saturator台",
+        "en": "Medium Saturator",
+        "ja": "中サチュ台"
+      },
+      "evidences": [
+        {
+          "zh-TW": "ひねくれ者EX 171-179：可亮C-Safe",
+          "en": "Jaded EX 171-179: Gets max with C-Safe",
+          "ja": "ひねくれ者EX 171-179：C-Safeが入る"
+        },
+        {
+          "zh-TW": "Yellow H 437-448：可亮C-F",
+          "en": "Yellow H 437-448: Gets max with C-F",
+          "ja": "Yellow H 437-448：C-Fが入る"
+        }
+      ],
+      "video": "",
+      "desc": {
+        "zh-TW": "",
+        "en": "",
+        "ja": ""
+      }
+    },
+    {
+      "ids": {
+        "keychip": "A69E-01A16335612",
+        "main": "AAVE-01A16775611"
+      },
+      "store": "哈拉星球西門店",
+      "position": "",
+      "nickname": "西哈",
+      "area": "臺北",
+      "enStore": "HALA PLANET (XIMEN)",
+      "enPosition": "",
+      "lat": 25.043965491729374,
+      "lng": 121.508022142977,
+      "ranges": [
+        {
+          "min": 53.41,
+          "max": 59.09
+        }
+      ],
+      "weakRanges": [],
+      "type": {
+        "zh-TW": "愛言葉台～Nyanko台",
+        "en": "Aikotoba–Nyanko",
+        "ja": "愛言葉台～にゃんこ台"
+      },
+      "evidences": [
+        {
+          "zh-TW": "天鵝絨EX 311-316：可亮C-C",
+          "en": "Velvet Arabesque EX 311-316: Gets max with C-C",
+          "ja": "アラベスクEX 311-316：C-Cが入る"
+        },
+        {
+          "zh-TW": "戀愛筆記EX：可亮C-F",
+          "en": "Updating My Love List? EX: Gets max with C-F",
+          "ja": "ラブリスEX：C-Fが入る"
+        },
+        {
+          "zh-TW": "千年獨奏歌EX：可亮C-C",
+          "en": "Thousand Year Solo EX: Gets max with C-C",
+          "ja": "独奏歌EX：C-Cが入る"
+        },
+        {
+          "zh-TW": "天鵝絨EX 192-203：可亮C-C",
+          "en": "Velvet Arabesque EX 192-203: Gets max with C-C",
+          "ja": "アラベスクEX 192-203：C-Cが入る"
+        },
+        {
+          "zh-TW": "電子天使EX：可亮Sad-Sad",
+          "en": "Electric Angel EX: Gets max with Sad-Sad",
+          "ja": "えんじぇぅEX：Sad-Sadが入る"
+        }
+      ],
+      "video": "",
+      "desc": {
+        "zh-TW": "",
+        "en": "",
+        "ja": ""
+      }
+    },
+    {
+      "ids": {
+        "keychip": "A69E-01A15585612",
+        "main": "AAVE-01A18755615"
+      },
+      "store": "哈拉星球公館店",
+      "position": "",
+      "nickname": "公館",
+      "area": "臺北",
+      "enStore": "HALA PLANET",
+      "enPosition": "",
+      "lat": 25.01291750450249,
+      "lng": 121.53595117416508,
+      "ranges": [
+        {
+          "min": 73.86,
+          "max": 84.09
+        }
+      ],
+      "weakRanges": [],
+      "type": {
+        "zh-TW": "LNGN台～警察台",
+        "en": "LNGN–Police",
+        "ja": "ラスナイ台～警察台"
+      },
+      "evidences": [
+        {
+          "zh-TW": "ひねくれ者EX 30-38：可亮C-Safe",
+          "en": "Jaded EX 30-38: Gets max with C-Safe",
+          "ja": "ひねくれ者EX 30-38：C-Safeが入る"
+        },
+        {
+          "zh-TW": "貓食EX 556-566：可亮C-C",
+          "en": "Cat Food EX 556-566: Gets max with C-C",
+          "ja": "猫飯EX 556-566：C-Cが入る"
+        }
+      ],
+      "video": "",
+      "desc": {
+        "zh-TW": "",
+        "en": "",
+        "ja": ""
+      }
+    },
+    {
+      "ids": {
+        "keychip": "A69E-01A15625612",
+        "main": "AAVE-01A16535611"
+      },
+      "store": "Y19永淇樂園",
+      "position": "左台",
+      "nickname": "永淇左",
+      "area": "臺北",
+      "enStore": "YOUNG KEY PARADISE(DATONG)",
+      "enPosition": "L",
+      "lat": 25.049875812431306,
+      "lng": 121.51269038201922,
+      "ranges": [
+        {
+          "min": 80.68,
+          "max": 84.09
+        }
+      ],
+      "weakRanges": [],
+      "type": {
+        "zh-TW": "LNGN台",
+        "en": "LNGN",
+        "ja": "ラスナイ台"
+      },
+      "evidences": [
+        {
+          "zh-TW": "ひねくれ者EX 30-38：可亮C-Safe",
+          "en": "Jaded EX 30-38: Gets max with C-Safe",
+          "ja": "ひねくれ者EX 30-38：C-Safeが入る"
+        },
+        {
+          "zh-TW": "貓食EX 556-566：可亮C-C",
+          "en": "Cat Food EX 556-566: Gets max with C-C",
+          "ja": "猫飯EX 556-566：C-Cが入る"
+        },
+        {
+          "zh-TW": "貓食EX 581-594：可亮C-C",
+          "en": "Cat Food EX 581-594: Gets max with C-C",
+          "ja": "猫飯EX 581-594：C-Cが入る"
+        }
+      ],
+      "video": "",
+      "desc": {
+        "zh-TW": "",
+        "en": "",
+        "ja": ""
+      }
+    },
+    {
+      "ids": {
+        "keychip": "A69E-01A15225612",
+        "main": "AAVE-01A16865611"
+      },
+      "store": "Y19永淇樂園",
+      "position": "右台",
+      "nickname": "永淇右",
+      "area": "臺北",
+      "enStore": "YOUNG KEY PARADISE(DATONG)",
+      "enPosition": "R",
+      "lat": 25.049875812431306,
+      "lng": 121.51269038201922,
+      "ranges": [
+        {
+          "min": 50,
+          "max": 59.09
+        }
+      ],
+      "weakRanges": [],
+      "type": {
+        "zh-TW": "愛言葉／Nyanko台～DYE台",
+        "en": "Aikotoba/Nyanko–DYE",
+        "ja": "愛言葉／にゃんこ台～ダイ台"
+      },
+      "evidences": [
+        {
+          "zh-TW": "天鵝絨EX 192-203：可亮C-C",
+          "en": "Velvet Arabesque EX 192-203: Gets max with C-C",
+          "ja": "アラベスクEX 192-203：C-Cが入る"
+        },
+        {
+          "zh-TW": "ZIGG-ZAGG EX 264-267：可亮C-C",
+          "en": "ZIGG-ZAGG EX 264-267: Gets max with C-C",
+          "ja": "ZIGG-ZAGG EX 264-267：C-Cが入る"
+        },
+        {
+          "zh-TW": "Melancholic EX 42：開幕○沒有遲2",
+          "en": "Melancholic EX 42: ○ on the opening has no late-2 COOL",
+          "ja": "メランコEX 42：開幕○追加遅2なし"
+        }
+      ],
+      "video": "",
+      "desc": {
+        "zh-TW": "",
+        "en": "",
+        "ja": ""
+      }
+    },
+    {
+      "ids": {
+        "keychip": "A69E-01A15265612",
+        "main": "AAVE-01A16845611"
+      },
+      "store": "湯姆熊歡樂世界金萬年加盟店",
+      "position": "左台",
+      "nickname": "萬年左",
+      "area": "臺北",
+      "enStore": "TOM'S WORLD(JINWANNIAN@TAIPEI)",
+      "enPosition": "L",
+      "lat": 25.043769820664135,
+      "lng": 121.505879895511,
+      "ranges": [
+        {
+          "min": 51.14,
+          "max": 59.09
+        }
+      ],
+      "weakRanges": [],
+      "type": {
+        "zh-TW": "愛言葉台～Nyanko台",
+        "en": "Aikotoba–Nyanko",
+        "ja": "愛言葉台～にゃんこ台"
+      },
+      "evidences": [
+        {
+          "zh-TW": "ZIGG-ZAGG EX 276-283：可亮C-C",
+          "en": "ZIGG-ZAGG EX 276-283: Gets max with C-C",
+          "ja": "ZIGG-ZAGG EX 276-283：C-Cが入る"
+        },
+        {
+          "zh-TW": "天鵝絨 EX 192-203：可亮C-C",
+          "en": "Velvet Arabesque EX 192-203: Gets max with C-C",
+          "ja": "アラベスクEX 192-203：C-Cが入る"
+        }
+      ],
+      "video": "",
+      "desc": {
+        "zh-TW": "",
+        "en": "",
+        "ja": ""
+      }
+    },
+    {
+      "ids": {
+        "keychip": "A69E-01A15595612",
+        "main": "AAVE-01A17435611"
+      },
+      "store": "湯姆熊歡樂世界金萬年加盟店",
+      "position": "右台",
+      "nickname": "萬年右",
+      "area": "臺北",
+      "enStore": "TOM'S WORLD(JINWANNIAN@TAIPEI)",
+      "enPosition": "R",
+      "lat": 25.043769820664135,
+      "lng": 121.505879895511,
+      "ranges": [
+        {
+          "min": 71.59,
+          "max": 84.09
+        }
+      ],
+      "weakRanges": [],
+      "type": {
+        "zh-TW": "LNGN台～警察台",
+        "en": "LNGN–Police",
+        "ja": "ラスナイ台～警察台"
+      },
+      "evidences": [
+        {
+          "zh-TW": "二息EX 461-476：可亮C-C",
+          "en": "Two Breaths Walking EX 461-476: Gets max with C-C",
+          "ja": "二息歩行EX 461-476：C-Cが入る"
+        },
+        {
+          "zh-TW": "貓食EX 556-566：可亮C-C",
+          "en": "Cat Food EX 556-566: Gets max with C-C",
+          "ja": "猫飯EX 556-566：C-Cが入る"
+        },
+        {
+          "zh-TW": "Freely EX 274-278：可亮C-C",
+          "en": "Freely Tomorrow EX 274-278: Gets max with C-C",
+          "ja": "フリーリーEX 274-278：C-Cが入る"
+        }
+      ],
+      "video": "",
+      "desc": {
+        "zh-TW": "",
+        "en": "",
+        "ja": ""
+      }
+    },
+    {
+      "ids": {
+        "keychip": "A69E-01A17296615",
+        "main": "AAVE-01A16545611"
+      },
+      "store": "X50 Music Game Station 二店",
+      "position": "",
+      "nickname": "X50",
+      "area": "臺北",
+      "enStore": "X50 MUSIC GAME STATION",
+      "enPosition": "",
+      "lat": 25.045946657733637,
+      "lng": 121.50313045318316,
+      "ranges": [
+        {
+          "min": 65.91,
+          "max": 68.18
+        }
+      ],
+      "weakRanges": [
+        {
+          "min": 62.5,
+          "max": 65.91
+        },
+        {
+          "min": 71.59,
+          "max": 100
+        }
+      ],
+      "type": {
+        "zh-TW": "MOP台（有時是警察台或其他Freely傾向）",
+        "en": "MOP (Sometimes Police or other toward the Freely end)",
+        "ja": "ますぱぺ台（たまには警察台または他のフリーリー傾向）"
+      },
+      "evidences": [
+        {
+          "zh-TW": "Freely EX 274-278：可亮C-C",
+          "en": "Freely Tomorrow EX 274-278: Gets max with C-C",
+          "ja": "フリーリーEX 274-278：C-Cが入る"
+        },
+        {
+          "zh-TW": "（有時）MOP H：最後COOL時沒有10120",
+          "en": "(Sometimes) Master of Puppets H: Has no 10120 at the end while COOL",
+          "ja": "（たまに）ますぱぺH：ラストCで10120なし"
+        },
+        {
+          "zh-TW": "（有時）MOP H：最後COOL時有10120",
+          "en": "(Sometimes) Master of Puppets H: Has 10120 at the end while COOL",
+          "ja": "（たまに）ますぱぺH：ラストCで10120"
+        },
+        {
+          "zh-TW": "（有時）天鵝絨EX 283-293：可亮C-C",
+          "en": "(Sometimes) Velvet Arabesque EX 283-293: Gets max with C-C",
+          "ja": "（たまに）アラベスクEX 283-293：C-Cが入る"
+        },
+        {
+          "zh-TW": "（有時）荒野EX 331-336：可亮C-Safe",
+          "en": "(Sometimes) A Song of Wastelands, Forests, and Magic EX 331-336: Gets max with C-Safe",
+          "ja": "（たまに）荒野EX 331-336：C-Safeが入る"
+        },
+        {
+          "zh-TW": "（少見）二息EX 461-476：可亮C-C",
+          "en": "(Rare) Two Breaths Walking EX 461-476: Gets max with C-C",
+          "ja": "（レア）二息歩行EX 461-476：C-Cが入る"
+        }
+      ],
+      "video": "",
+      "desc": {
+        "zh-TW": "主要是MOP台，有時候會在機台重新開機後變成警察台或其他Freely傾向的台。",
+        "en": "Mainly MOP, but sometimes changes to Police or other toward the Freely end after the arcade machine restarts.",
+        "ja": "主にますぱぺ台ですが、時々再起動した後に警察台または他のフリーリー傾向の台に変わります。"
+      }
+    },
+    {
+      "ids": {
+        "keychip": "A69E-01A15465612",
+        "main": "AAVE-01A17525611"
+      },
+      "store": "白喵一番屋新竹店",
+      "position": "",
+      "nickname": "竹喵",
+      "area": "新竹",
+      "enStore": "SHIRONEKOYA(HSINCHU)",
+      "enPosition": "",
+      "lat": 24.80287987907289,
+      "lng": 120.97157002433944,
+      "ranges": [
+        {
+          "min": 42.05,
+          "max": 48.86
+        }
+      ],
+      "weakRanges": [],
+      "type": {
+        "zh-TW": "DYE台",
+        "en": "DYE",
+        "ja": "ダイ台"
+      },
+      "evidences": [
+        {
+          "zh-TW": "電子天使EX 397-405：可亮Sad-Sad",
+          "en": "Electric Angel EX 397-405: Gets max with Sad-Sad",
+          "ja": "えんじぇぅEX 397-405：Sad-Sadが入る"
+        },
+        {
+          "zh-TW": "Melancholic EX 42：開幕○有遲2",
+          "en": "Melancholic EX 42: ○ on the opening has late-2 COOL",
+          "ja": "メランコEX 42：開幕○追加遅2あり"
+        },
+        {
+          "zh-TW": "天鵝絨EX 192-203：可亮C-C",
+          "en": "Velvet Arabesque EX 192-203: Gets max with C-C",
+          "ja": "アラベスクEX 192-203：C-Cが入る"
+        }
+      ],
+      "video": "",
+      "desc": {
+        "zh-TW": "",
+        "en": "",
+        "ja": ""
+      }
+    },
+    {
+      "ids": {
+        "keychip": "A69E-01A15365612",
+        "main": "AAVE-01A17695611"
+      },
+      "store": "H50 Music Game Station （H50MGS）",
+      "position": "",
+      "nickname": "H50",
+      "area": "臺中",
+      "enStore": "HALA (FENGJIA)",
+      "enPosition": "",
+      "lat": 24.174649485399065,
+      "lng": 120.64426651082805,
+      "ranges": [
+        {
+          "min": 86.36,
+          "max": 87.5
+        }
+      ],
+      "weakRanges": [
+        {
+          "min": 22.73,
+          "max": 38.64
+        }
+      ],
+      "type": {
+        "zh-TW": "Sound台（有時是Saturator台）",
+        "en": "Sound (Sometimes Saturator)",
+        "ja": "サウンド台（たまにはサチュ台）"
+      },
+      "evidences": [
+        {
+          "zh-TW": "貓食EX 567-577：可亮C-C",
+          "en": "Cat Food EX 567-577: Gets max with C-C",
+          "ja": "猫飯EX 567-577：C-Cが入る"
+        },
+        {
+          "zh-TW": "（Sound台時期）Freely EX 274-278：可亮C-C",
+          "en": "(Sound Period) Freely Tomorrow EX 274-278: Gets max with C-C",
+          "ja": "（サウンド台時期）フリーリーEX 274-278：C-Cが入る"
+        },
+        {
+          "zh-TW": "（Sound台時期）1925 EX 386-395：可亮C-F",
+          "en": "(Sound Period) 1925 EX 386-395: Gets max with C-F",
+          "ja": "（サウンド台時期）1925 EX 386-395：C-Fが入る"
+        },
+        {
+          "zh-TW": "（Saturator台時期）貓食EX 581-594：可亮C-C",
+          "en": "(Saturator Period) Cat Food EX 581-594: Gets max with C-C",
+          "ja": "（サチュ台時期）猫飯EX 581-594：C-Cが入る"
+        },
+        {
+          "zh-TW": "（Saturator台時期）歌形EX 343-355：可接C-C",
+          "en": "(Saturator Period) Though My Song Has No Form EX 343-355: Connects with C-C",
+          "ja": "（サチュ台時期）うたかたEX 343-355：C-Cが接続する"
+        }
+      ],
+      "video": "",
+      "desc": {
+        "zh-TW": "主要是Sound台，有時候會在機台重新開機後變成saturator台。",
+        "en": "Mainly Sound, but sometimes changes to Saturator after the arcade machine restarts.",
+        "ja": "主にサウンド台ですが、時々再起動した後にサチュ台に変わります。"
+      }
+    },
+    {
+      "ids": {
+        "keychip": "A69E-01A15785612",
+        "main": "AAVE-01A18605615"
+      },
+      "store": "湯姆熊歡樂世界新光三越中山店",
+      "position": "左台",
+      "nickname": "新光左",
+      "area": "臺南",
+      "enStore": "TOM'S WORLD (MITSUKOSHI@TAINAN )",
+      "enPosition": "L",
+      "lat": 22.995662243641576,
+      "lng": 120.2097901647083,
+      "ranges": [
+        {
+          "min": 62.5,
+          "max": 68.18
+        }
+      ],
+      "type": {
+        "zh-TW": "MOP台",
+        "en": "MOP",
+        "ja": "ますぱぺ台"
+      },
+      "evidences": [
+        {
+          "zh-TW": "Freely EX 274-278：可亮C-C",
+          "en": "Freely Tomorrow EX 274-278: Gets max with C-C",
+          "ja": "フリーリーEX 274-278：C-Cが入る"
+        },
+        {
+          "zh-TW": "MOP H：最後COOL時有10120",
+          "en": "Master of Puppets H: Has 10120 at the end while COOL",
+          "ja": "ますぱぺH：ラストCで10120"
+        }
+      ],
+      "video": "",
+      "desc": {
+        "zh-TW": "",
+        "en": "",
+        "ja": ""
+      }
+    },
+    {
+      "ids": {
+        "keychip": "A69E-01A17435615",
+        "main": "AAVE-01A18735615"
+      },
+      "store": "湯姆熊歡樂世界新光三越中山店",
+      "position": "右台",
+      "nickname": "新光右",
+      "area": "臺南",
+      "enStore": "TOM'S WORLD (MITSUKOSHI@TAINAN )",
+      "enPosition": "R",
+      "lat": 22.995662243641576,
+      "lng": 120.2097901647083,
+      "ranges": [
+        {
+          "min": 62.5,
+          "max": 68.18
+        }
+      ],
+      "weakRanges": [],
+      "type": {
+        "zh-TW": "MOP台",
+        "en": "MOP",
+        "ja": "ますぱぺ台"
+      },
+      "evidences": [
+        {
+          "zh-TW": "Freely EX 274-278：可亮C-C",
+          "en": "Freely Tomorrow EX 274-278: Gets max with C-C",
+          "ja": "フリーリーEX 274-278：C-Cが入る"
+        },
+        {
+          "zh-TW": "MOP H：最後COOL時有10120",
+          "en": "Master of Puppets H: Has 10120 at the end while COOL",
+          "ja": "ますぱぺH：ラストCで10120"
+        }
+      ],
+      "video": "",
+      "desc": {
+        "zh-TW": "",
+        "en": "",
+        "ja": ""
+      }
+    },
+    {
+      "ids": {
+        "keychip": "A69E-01A17455615",
+        "main": "AAVE-01A18765615"
+      },
+      "store": "夢時代快樂100",
+      "position": "左台",
+      "nickname": "夢時代左",
+      "area": "高雄",
+      "enStore": "HAPPY100(DREAM MALL@KAOHSIUNG )",
+      "enPosition": "L",
+      "lat": 22.595114110368087,
+      "lng": 120.30754859291109,
+      "ranges": [
+        {
+          "min": 71.59,
+          "max": 76.14
+        }
+      ],
+      "weakRanges": [],
+      "type": {
+        "zh-TW": "警察台",
+        "en": "Police",
+        "ja": "警察台"
+      },
+      "evidences": [
+        {
+          "zh-TW": "Freely EX 274-278：可亮C-C",
+          "en": "Freely Tomorrow EX 274-278: Gets max with C-C",
+          "ja": "フリーリーEX 274-278：C-Cが入る"
+        },
+        {
+          "zh-TW": "二息EX 461-476：可亮C-C",
+          "en": "Two Breaths Walking EX 461-476: Gets max with C-C",
+          "ja": "二息歩行EX 461-476：C-Cが入る"
+        },
+        {
+          "zh-TW": "歌形H 301-313：可亮C-Sad",
+          "en": "Though My Song Has No Form H 301-313: Gets max with C-Sad",
+          "ja": "うたかたH 301-313：C-Sadが入る"
+        }
+      ],
+      "video": "",
+      "desc": {
+        "zh-TW": "",
+        "en": "",
+        "ja": ""
+      }
+    },
+    {
+      "ids": {
+        "keychip": "A69E-01A17395615",
+        "main": "AAVE-01A18795615"
+      },
+      "store": "夢時代快樂100",
+      "position": "右台",
+      "nickname": "夢時代右",
+      "area": "高雄",
+      "enStore": "HAPPY100(DREAM MALL@KAOHSIUNG )",
+      "enPosition": "R",
+      "lat": 22.595114110368087,
+      "lng": 120.30754859291109,
+      "ranges": [
+        {
+          "min": 65.91,
+          "max": 68.18
+        }
+      ],
+      "weakRanges": [],
+      "type": {
+        "zh-TW": "MOP台",
+        "en": "MOP",
+        "ja": "ますぱぺ台"
+      },
+      "evidences": [
+        {
+          "zh-TW": "荒野EX 331-336：可亮C-Safe",
+          "en": "A Song of Wastelands, Forests, and Magic EX 331-336: Gets max with C-Safe",
+          "ja": "荒野EX 331-336：C-Safeが入る"
+        },
+        {
+          "zh-TW": "MOP H：最後COOL時有10120",
+          "en": "Master of Puppets H: Has 10120 at the end while COOL",
+          "ja": "ますぱぺH：ラストCで10120"
+        }
+      ],
+      "video": "",
+      "desc": {
+        "zh-TW": "",
+        "en": "",
+        "ja": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "title": "台湾 Project DIVA Arcade 筐体傾向分布図",
+  "spectrumLabels": {
+    "top": "フリーリー傾向",
+    "bottom": "ダイ傾向"
+  },
+  "rangeLabels": {
+    "acute": "あきうと台",
+    "strongSaturator": "強サチュ台",
+    "mediumSaturator": "中サチュ台",
+    "weakSaturator": "弱サチュ台",
+    "dye": "ダイ台",
+    "nyanko": "にゃんこ台",
+    "aikotoba": "愛言葉台",
+    "mop": "ますぱぺ台",
+    "strongPolice": "強警察台",
+    "weakPolice": "弱警察台",
+    "lngn": "ラスナイ台",
+    "odds": "オッズ台",
+    "sound": "サウンド台"
+  },
+  "buttons": {
+    "info": "チャート情報",
+    "members": "プロジェクトメンバー"
+  },
+  "modals": {
+    "info": {
+      "title": "基本情報",
+      "content": "「台差」とは、メンテの良さ（例：ボタンの反応の良さなど）とは関係なく筐体の固有属性を指し、これにより異なる曲が異なる筐体で判定は広くまたは狭くなる（つまりFINEが出やすいかどうか）、さらにはスコアタルートが完走できるかどうかに決定的な影響を与える要因となる。「台傾向」とは、台差の分類スペクトルを指す。Project DIVA Arcadeにおける台差の極めて高い重要性に鑑み、台湾では台差に関する調査や整理が十分に体系化されておらず、情報が分散しているため、本計画は台湾全土の筐体の傾向をテスト・収集・整理し、この地図およびチャートを作成しました、ご参考までに。",
+      "instruction": "お問い合わせ：CCT（[Eternal∞DIVA]CCT、X: @CCT_39）",
+      "lastUpdated": "最終更新日："
+    },
+    "members": {
+      "title": "メンバーまたは協力者（順不同・敬称略）",
+      "adminLabel": "責任者",
+      "testersLabel": "テスト協力",
+      "techSupportLabel": "技術協力"
+    }
+  },
+  "popup": {
+    "machineType": "筐体種類",
+    "notTested": "未知",
+    "watchVideo": "動画を見る",
+    "evidences": "判定情報抜粋"
+  },
+  "dataLoadError": "data.jsonの読み込みに失敗しました。プレビュー用のダミーデータを読み込んでいます。"
+}

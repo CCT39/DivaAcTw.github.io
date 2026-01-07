@@ -1,0 +1,47 @@
+{
+  "title": "臺灣 Project DIVA Arcade 機台傾向分布圖",
+  "spectrumLabels": {
+    "top": "Freely傾向",
+    "bottom": "DYE傾向"
+  },
+  "rangeLabels": {
+    "acute": "Acute台",
+    "strongSaturator": "強saturator台",
+    "mediumSaturator": "中saturator台",
+    "weakSaturator": "弱saturator台",
+    "dye": "DYE台",
+    "nyanko": "Nyanko台",
+    "aikotoba": "愛言葉台",
+    "mop": "MOP台",
+    "strongPolice": "強警察台",
+    "weakPolice": "弱警察台",
+    "lngn": "LNGN台",
+    "odds": "Odds台",
+    "sound": "Sound台"
+  },
+  "buttons": {
+    "info": "圖表資訊",
+    "members": "計畫成員"
+  },
+  "modals": {
+    "info": {
+      "title": "基本資訊",
+      "content": "「機台差」是指與機況（e.g. 按鍵好不好打、會不會卡鍵等）無關的筐體固有屬性，它會導致不同歌曲在不同機台的寬或窄（i.e. 容不容易出FINE），甚至是影響Score Attack（SA）路線是否能夠成功完走的決定性因素；而「機台傾向」是指機台差的分類光譜。有鑑於機台差在Project DIVA Arcade極為重要，而臺灣關於機台差的調查及整理卻缺乏系統、資訊零碎，因此本計畫旨在測試、蒐集並整理全臺各地機台的傾向，繪製成此地圖及圖表，僅供參考。",
+      "instruction": "如有任何疑問請洽：CCT（[Eternal∞DIVA]CCT，X: @CCT_39）",
+      "lastUpdated": "最後更新日期："
+    },
+    "members": {
+      "title": "計畫成員或支援者（順序不拘，敬稱略）",
+      "adminLabel": "計畫主導",
+      "testersLabel": "測試者",
+      "techSupportLabel": "技術支援"
+    }
+  },
+  "popup": {
+    "machineType": "機台類型",
+    "notTested": "未知",
+    "watchVideo": "觀看影片",
+    "evidences": "判定資料節錄"
+  },
+  "dataLoadError": "載入data.json失敗，正在載入測試資料以預覽樣式。"
+}

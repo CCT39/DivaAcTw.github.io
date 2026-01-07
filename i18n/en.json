@@ -1,0 +1,47 @@
+{
+  "title": "Taiwan Project DIVA Arcade Tendency Distribution Map",
+  "spectrumLabels": {
+    "top": "Freely",
+    "bottom": "DYE"
+  },
+  "rangeLabels": {
+    "acute": "Acute",
+    "strongSaturator": "Strong Saturator",
+    "mediumSaturator": "Medium Saturator",
+    "weakSaturator": "Weak Saturator",
+    "dye": "DYE",
+    "nyanko": "Nyanko",
+    "aikotoba": "Aikotoba",
+    "mop": "MOP",
+    "strongPolice": "Strong Police",
+    "weakPolice": "Weak Police",
+    "lngn": "LNGN",
+    "odds": "Odds",
+    "sound": "Sound"
+  },
+  "buttons": {
+    "info": "Chart Info",
+    "members": "Team Members"
+  },
+  "modals": {
+    "info": {
+      "title": "Information",
+      "content": "\"Machine difference (台差)\" refers to inherent characteristics of an arcade cabinet that are independent of its maintenance condition, such as button responsiveness or input sticking. These differences can affect how wide or narrow certain songs feel on different machines (i.e., how easy it is to get COOLs), and may even determine whether a score attack (SA) route can be successfully completed. \"Machine tendency (台傾向)\" describes the classification spectrum of machine differences. Given the critical role that machine differences play in Project DIVA Arcade, and the lack of systematic investigation and organization of related information in Taiwan, this project aims to test, collect, and categorize machine tendencies across Taiwan, and to visualize the results in this map and chart, for reference purposes only.",
+      "instruction": "Contact us: CCT ([Eternal∞DIVA]CCT, X: @CCT_39)",
+      "lastUpdated": "Last Updated: "
+    },
+    "members": {
+      "title": "Team Members or Contributors (in no particular order, honorifics omitted)",
+      "adminLabel": "Project Leader",
+      "testersLabel": "Testers",
+      "techSupportLabel": "Tech Support"
+    }
+  },
+  "popup": {
+    "machineType": "Type",
+    "notTested": "Unknown",
+    "watchVideo": "Watch Video",
+    "evidences": "Excerpts from test results"
+  },
+  "dataLoadError": "Loading data.json failed, loading dummy data for preview styling."
+}

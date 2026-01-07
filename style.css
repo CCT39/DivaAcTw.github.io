@@ -1,0 +1,444 @@
+/* ----------------------------------------------------------
+   CSS Variables & Reset 
+   ----------------------------------------------------------
+*/
+@font-face {
+    font-display: swap;
+    font-family: "LXGW WenKai TC";
+    src: url("lxgw-wenkai-tc.woff2") format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+:root {
+    --primary-colour: #39c5bb;
+    --primary-dark: #2ba39b;
+    --secondary-colour: #e12885;
+    --secondary-light: #ff6bb5;
+    --text-main: #373b3e;
+    --text-light: #777;
+    --bg-body: #effbff; /* 背景 */
+    --bg-card: #ffffff;
+    --border-colour: #eee;
+    --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.15);
+    --shadow-hover: 0 15px 35px -10px rgba(0, 0, 0, 0.2);
+    --radius-card: 24px;
+    --radius-btn: 12px;
+}
+
+body {
+    margin: 0;
+    font-family: "LXGW WenKai TC", "Microsoft JhengHei", sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    /* 讓整個畫面在電腦版置中顯示 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden; /* 防止雙重捲軸 */
+}
+
+/* Vue App 容器 */
+#app {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------------------------------------------------
+   Main Layout (Card Style)
+   ----------------------------------------------------------
+*/
+.main-card {
+    background-color: var(--bg-card);
+    width: 100%;
+    max-width: 1200px;
+    height: 90vh; /* 電腦版高度 */
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    margin: 0;
+    padding: 15px 20px;
+    background-color: var(--primary-colour);
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+    flex: 0 0 auto;
+}
+
+/* ----------------------------------------------------------
+   Language Selector
+   ----------------------------------------------------------
+*/
+.language-selector {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid var(--border-colour);
+    flex: 0 0 auto;
+}
+
+.lang-btn {
+    padding: 6px 16px;
+    border: 2px solid var(--primary-colour);
+    background-color: #fff;
+    color: var(--primary-colour);
+    border-radius: var(--radius-btn);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 旗幟背景效果 */
+.lang-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 0;
+    background-repeat: no-repeat;
+}
+
+.lang-btn:hover::before {
+    opacity: 0.6;
+}
+
+/* 繁體中文按鈕：一個旗幟（臺灣） */
+.lang-btn[data-lang="zh-TW"]::before {
+    background-image: url('i18n/flags/roc(taiwan).png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 英文按鈕：兩個旗幟（英國、美國） */
+.lang-btn[data-lang="en"]::before {
+    background-image: 
+        url('i18n/flags/uk.png'),
+        url('i18n/flags/usa.png');
+    background-size: 50% 100%, 50% 100%;
+    background-position: left center, right center;
+}
+
+/* 日文按鈕：一個旗幟（日本） */
+.lang-btn[data-lang="ja"]::before {
+    background-image: url('i18n/flags/japan.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 確保文字在旗幟上方 */
+.lang-btn > * {
+    position: relative;
+    z-index: 1;
+}
+
+.lang-btn:hover {
+    background-color: var(--primary-colour);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(57, 197, 187, 0.3);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.lang-btn.active {
+    background-color: var(--primary-colour);
+    color: #fff;
+    font-weight: bold;
+}
+
+.lang-btn:active {
+    transform: translateY(0);
+}
+
+.lang-btn:disabled,
+.lang-btn[disabled] {
+    opacity: 0.4;
+    cursor: not-allowed;
+    background-color: #f5f5f5;
+    color: #999;
+    border-color: #ddd;
+    transform: none;
+    box-shadow: none;
+}
+
+.lang-btn:disabled:hover,
+.lang-btn[disabled]:hover {
+    background-color: #f5f5f5;
+    color: #999;
+    border-color: #ddd;
+    transform: none;
+    box-shadow: none;
+}
+
+.lang-btn:disabled::before,
+.lang-btn[disabled]::before {
+    opacity: 0;
+}
+
+#container {
+    display: flex;
+    flex: 1; /* 佔滿卡片剩餘高度 */
+    overflow: hidden;
+    position: relative;
+}
+
+/* ----------------------------------------------------------
+   Spectrum Section (Left)
+   ----------------------------------------------------------
+*/
+#spectrum {
+    flex: 0 0 320px; /* 固定寬度 */
+    background: #fff;
+    border-right: 1px solid var(--border-colour);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 0;
+    position: relative;
+    
+    /* 自訂捲軸樣式 */
+    scrollbar-width: thin;
+    scrollbar-color: #ddd transparent;
+}
+
+#spectrum::-webkit-scrollbar {
+    width: 6px;
+}
+#spectrum::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 3px;
+}
+
+/* 讓SVG在區塊內置中 */
+#spectrum svg {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------------------
+   Map Section (Right)
+   ----------------------------------------------------------
+*/
+#map {
+    flex: 1;
+    z-index: 1;
+    background-color: #eef; /* 地圖載入前的背景色 */
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 12px !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+    font-family: "LXGW WenKai TC", "Microsoft JhengHei", sans-serif;
+    padding: 5px;
+}
+.leaflet-popup-tip {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+}
+
+/* ----------------------------------------------------------
+   D3 Interactive Elements
+   ----------------------------------------------------------
+*/
+.range {
+    cursor: pointer;
+    transition: opacity 0.2s, stroke-width 0.2s;
+    /* D3 rect無法直接用border-radius，需在JS使用rx/ry，
+       但在這裡我們可以設定hover效果 */
+}
+.range:hover {
+    filter: brightness(0.9);
+}
+
+.spectrum-label-top, .spectrum-label-bottom {
+    font-weight: bold;
+    fill: var(--text-main);
+    font-size: 14px;
+}
+
+/* ----------------------------------------------------------
+   Floating Buttons (Bottom Left)
+   ----------------------------------------------------------
+*/
+.info-buttons {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    z-index: 1000; /* 高於Leaflet */
+    display: flex;
+    flex-direction: column; /* 改為垂直排列看起來比較整齊，也可維持row */
+    gap: 12px;
+}
+
+.icon-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--bg-card);
+    color: var(--text-main);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-size: 1.2rem;
+}
+
+.icon-btn:hover {
+    background: var(--primary-colour);
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(57, 197, 187, 0.4);
+}
+
+.icon-btn:active {
+    transform: scale(0.95);
+}
+
+/* ----------------------------------------------------------
+   Modals (Bootstrap Overrides)
+   ----------------------------------------------------------
+*/
+.modal-content {
+    border: none;
+    border-radius: var(--radius-card);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    font-family: "LXGW WenKai TC", "Microsoft JhengHei", sans-serif;
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--border-colour);
+    background-color: #fafafa;
+    border-radius: var(--radius-card) var(--radius-card) 0 0;
+}
+
+.modal-title {
+    color: var(--primary-dark);
+    font-weight: bold;
+}
+
+.btn-close:focus {
+    box-shadow: none;
+}
+
+/* ----------------------------------------------------------
+   Responsive (RWD) 
+   ----------------------------------------------------------
+*/
+
+/* Tablet & Mobile */
+@media (max-width: 900px) {
+    body {
+        padding: 0;
+        height: 100vh;
+        align-items: flex-start; /* 防止置中導致被切邊 */
+    }
+
+    #app {
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    .main-card {
+        height: 100vh;
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+
+    .language-selector {
+        padding: 8px 15px;
+        gap: 6px;
+    }
+
+    .lang-btn {
+        padding: 5px 12px;
+        font-size: 0.85rem;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    /* 地圖區塊：在下方，固定高度比例 */
+    #map {
+        flex: none;
+        height: 45vh; /* 佔總高度的 45% */
+        border-top: 2px solid #fff; /* 視覺分隔 */
+    }
+    
+    .info-buttons {
+        bottom: calc(45vh + 20px); /* 讓按鈕跟著地圖上方移動，或是維持在左下角 */
+        /* 如果希望按鈕浮在地圖上，可以用bottom: 20px */
+        bottom: 20px; 
+        left: 15px;
+        flex-direction: row; /* 手機版橫向排列按鈕比較好按 */
+    }
+
+    /* 光譜區塊：在上方，佔據剩餘空間 */
+    #spectrum {
+        flex: 1; /* 自動填滿剩餘高度 */
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--border-colour);
+        padding: 10px 0;
+        
+        /* 確保內容居中且不會跑版 */
+        display: flex;
+        justify-content: center; 
+        align-items: flex-start; /* 內容從上面開始 */
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+    
+    .language-selector {
+        padding: 6px 10px;
+    }
+    
+    .lang-btn {
+        padding: 4px 10px;
+        font-size: 0.8rem;
+    }
+    
+    #map {
+        height: 55vh; /* 小螢幕地圖稍微再大一點 */
+    }
+}
