@@ -4,7 +4,7 @@
 
 ## 專案簡介
 
-這是一個互動式地圖應用程式，用於展示臺灣「初音未來 Project DIVA Arcade Future Tone」機台的傾向分布。「機台差」是指與機況（如按鍵好壞、會不會卡鍵等）無關的筐體固有屬性，會影響不同歌曲在不同機台的寬或窄（即容不容易出FINE），甚至是影響 Score Attack（SA）路線是否能夠成功完走的決定性因素。
+這是一個互動式地圖應用程式，用於展示臺灣「初音未來 Project DIVA Arcade Future Tone」機台的傾向分布。「機台差」是指與機況（如按鍵好壞、會不會卡鍵等）無關的筐體固有屬性，會影響不同歌曲在不同機台的寬或窄（即容不容易出FINE），甚至是影響 Score Attack（SA）路線是否能夠成功完走的決定性因素；而「機台傾向」是指機台差的分類光譜。
 
 本專案旨在測試、蒐集並整理全臺各地機台的傾向，將測試結果以視覺化方式呈現於互動式地圖及光譜圖表上，方便玩家查詢各店家的機台特性。
 
@@ -12,7 +12,7 @@
 
 - 🗺️ **互動式地圖**：使用 Leaflet.js 顯示臺灣各地機台位置
 - 📊 **光譜圖表**：使用 D3.js 視覺化呈現機台傾向分類
-- 🌐 **多語言支援**：支援正體中文、English、日本語三種語言
+- 🌐 **多語言支援**：支援正體中文、英文、日文三種語言
 - 📱 **響應式設計**：適配各種螢幕尺寸
 - 🎨 **分類標籤**：將機台分為 13 種傾向類型（Acute、Saturator、DYE、Nyanko、愛言葉、MOP、警察、LNGN、Odds、Sound等），各類型範圍可能互有重疊
 - 🎥 **影片證據**：每個機台可附上測試影片連結
@@ -169,6 +169,179 @@ cd DivaAcTw.github.io
 
 ---
 
+<a name="japanese"></a>
+
+# 台湾「初音ミク Project DIVA Arcade Future Tone」筐体傾向分布図
+
+[正體中文](#top) | [English](#english)
+
+## プロジェクト概要
+
+これは、台湾全土の「初音ミク Project DIVA Arcade Future Tone」筐体の傾向分布を表示するインタラクティブマップアプリケーションです。「台差」とは、メンテの良さ（例：ボタンの反応の良さなど）とは関係なく筐体の固有属性を指し、これにより異なる曲が異なる筐体で判定が広くまたは狭くなる（つまりFINEが出やすいかどうか）、さらにはスコアタルートが完走できるかどうかに決定的な影響を与える要因となります。「台傾向」とは、台差の分類スペクトルを指す。
+
+本プロジェクトは台湾全土の筐体の傾向をテスト・収集・整理し、テスト結果をインタラクティブマップとスペクトルチャートで視覚化することで、プレイヤーが各店舗の筐体特性を確認できるようにすることを目的としています。
+
+## 主要機能
+
+- 🗺️ **インタラクティブマップ**：Leaflet.js を使用して台湾全土の筐体位置を表示
+- 📊 **スペクトルチャート**：D3.js を使用して筐体傾向分類を視覚化
+- 🌐 **多言語対応**：中国語（繁體字）、英語、日本語の3言語をサポート
+- 📱 **レスポンシブデザイン**：様々な画面サイズに対応
+- 🎨 **分類ラベル**：13種類の傾向タイプに分類（あきうと、サチュ、ダイ、にゃんこ、愛言葉、ますぱぺ、警察、ラスナイ、オッズ、サウンドなど）、各タイプの範囲は重複する可能性があります
+- 🎥 **動画証拠**：各筐体にテスト動画リンクを添付可能
+
+## 技術スタック
+
+### フロントエンドフレームワーク＆ライブラリ
+
+- **Vue 3**：メインアプリケーションフレームワーク
+- **Leaflet.js**：地図インタラクション機能
+- **D3.js**：データ視覚化チャート
+- **Bootstrap 5**：UIコンポーネントとスタイル
+- **Font Awesome**：アイコン
+- **[霞鶩文楷 TC](https://github.com/lxgw/LxgwWenkaiTC)**：中国語フォント（作者：[lxgw](https://github.com/lxgw)）
+
+### プロジェクト構造
+
+```
+DivaAcTw.github.io/
+├── index.html          # メイン HTML ページ
+├── style.css           # スタイルシート
+├── data.json           # 筐体データ（位置、傾向、動画など）
+├── js/
+│   └── app.js          # Vue 3 アプリケーションロジック
+└── i18n/               # 国際化言語ファイル
+    ├── zh-TW.json      # 中国語（繁體字）
+    ├── en.json         # 英語
+    ├── ja.json         # 日本語
+    └── flags/          # 言語フラグアイコン
+```
+
+## データフォーマット
+
+### data.json 構造
+
+```json
+{
+  "metadata": {
+    "members": {
+      "admin": "責任者",
+      "testers": ["テスター1", "テスター2"],
+      "techSupport": ["技術協力者"]
+    },
+    "lastUpdated": "2025-12-31"
+  },
+  "range": [
+    {
+      "from": 0,
+      "to": 14.77,
+      "label": "あきうと台",
+      "labelKey": "acute"
+    }
+    // ……その他の範囲定義
+  ],
+  "data": [
+    {
+      "name": "店舗名",
+      "latitude": 25.0330,
+      "longitude": 121.5654,
+      "type": 42.5,
+      "videos": [
+        // 現在UIの簡潔性を考慮して動画リンクを直接表示せず、要求に応じて個別に提供する方式を採用
+        {
+          "title": "動画タイトル",
+          "url": "https://..."
+        }
+      ],
+      "evidences": [
+        {
+          "song": "楽曲名",
+          "info": "テスト情報"
+        }
+      ]
+    }
+  ]
+}
+```
+
+## 使い方
+
+### オンラインアクセス
+
+GitHub Pages の URL から直接アクセスできます（デプロイ済みの場合）。
+
+### ローカル実行
+
+1. リポジトリをクローン
+```bash
+git clone https://github.com/CCT39/DivaAcTw.github.io.git
+cd DivaAcTw.github.io
+```
+
+2. 以下のいずれかの方法でローカルサーバーを起動（外部JSONファイルの読み込みに必要）：
+
+   **方法 A：Python を使用**
+   ```bash
+   python -m http.server 8000
+   ```
+   その後ブラウザで `http://localhost:8000` を開く
+
+   **方法 B：Node.js の http-server を使用**
+   ```bash
+   npx http-server
+   ```
+   その後ブラウザで `http://localhost:8000` を開く
+
+   **方法 C：VS Code Live Server を使用（推奨）**
+   - VS Code に「Live Server」拡張機能をインストール
+   - VS Code でプロジェクトフォルダを開く
+   - `index.html` を右クリック → 「Open with Live Server」を選択
+   - ブラウザが自動的に開き、ファイル変更時に自動リロードされます
+
+## データ更新
+
+筐体データを追加または修正する場合：
+
+1. `data.json` を編集
+2. `data` 配列に店舗情報を追加
+3. 緯度・経度が正確であることを確認
+4. 筐体傾向値を設定（0–100、値が小さいほどダイ傾向、大きいほどフリーリー傾向）
+5. 前述の数値を裏付ける判定データをリストアップ（判定データと数値の対応については「連絡先」からお問い合わせください）
+6. オプション：テスト動画リンクを添付
+
+## 言語切り替え
+
+言語ファイルは `i18n/` ディレクトリに配置：
+
+- `zh-TW.json`：繁體中文（デフォルト）
+- `en.json`：English
+- `ja.json`：日本語
+
+ユーザーの言語選択は localStorage に保存され、次回訪問時に自動的に読み込まれます。
+
+## 貢献
+
+筐体テストデータや技術的な改善提案を歓迎します！
+
+## 連絡先
+
+お問い合わせ：CCT（[Eternal∞DIVA]CCT、X: @CCT_39）
+
+## ライセンス
+
+このプロジェクトは MIT ライセンスの下で公開されています。
+
+本プロジェクトはforkまたは修正が可能です。修正版は作者のオリジナル作品ではないことを明記する必要があります。
+
+## 謝辞
+
+本プロジェクトは以下の優れたオープンソースリソースを使用しています：
+- **[霞鶩文楷 TC](https://github.com/lxgw/LxgwWenkaiTC)** by [lxgw](https://github.com/lxgw) - エレガントなオープンソース中国語フォント
+
+テストデータを提供してくださったすべてのプレイヤーとコミュニティメンバーに感謝します
+
+---
+
 <a name="english"></a>
 
 # Taiwan "Hatsune Miku: Project DIVA Arcade Future Tone" Tendency Distribution Map
@@ -177,7 +350,7 @@ cd DivaAcTw.github.io
 
 ## Project Overview
 
-This is an interactive map application that visualizes the tendency distribution of "Hatsune Miku: Project DIVA Arcade Future Tone" machines across Taiwan. "Machine difference (台差)" refers to inherent characteristics of arcade cabinets that are independent of maintenance conditions (such as button responsiveness or input sticking). These differences can affect how wide or narrow certain songs feel on different machines (i.e., how easy it is to get COOLs), and may even determine whether a score attack (SA) route can be successfully completed.
+This is an interactive map application that visualizes the tendency distribution of "Hatsune Miku: Project DIVA Arcade Future Tone" machines across Taiwan. "Machine difference (台差)" refers to inherent characteristics of arcade cabinets that are independent of maintenance conditions (such as button responsiveness or input sticking). These differences can affect how wide or narrow certain songs feel on different machines (i.e., how easy it is to get COOLs), and may even determine whether a score attack (SA) route can be successfully completed. "Machine tendency (台傾向)" describes the classification spectrum of machine differences.
 
 This project aims to test, collect, and categorize machine tendencies across Taiwan, presenting the results through an interactive map and spectrum chart for players to reference arcade characteristics at various locations.
 
@@ -339,176 +512,3 @@ This project uses the following excellent open-source resources:
 - **[LXGW WenKai TC](https://github.com/lxgw/LxgwWenkaiTC)** by [lxgw](https://github.com/lxgw) - An elegant open-source Chinese font
 
 Thanks to all players and community members who contributed test data
-
----
-
-<a name="japanese"></a>
-
-# 台湾「初音ミク Project DIVA Arcade Future Tone」筐体傾向分布図
-
-[正體中文](#top) | [English](#english)
-
-## プロジェクト概要
-
-これは、台湾全土の「初音ミク Project DIVA Arcade Future Tone」筐体の傾向分布を表示するインタラクティブマップアプリケーションです。「台差」とは、メンテの良さ（例：ボタンの反応の良さなど）とは関係なく筐体の固有属性を指し、これにより異なる曲が異なる筐体で判定が広くまたは狭くなる（つまりFINEが出やすいかどうか）、さらにはスコアタルートが完走できるかどうかに決定的な影響を与える要因となります。
-
-本プロジェクトは台湾全土の筐体の傾向をテスト・収集・整理し、テスト結果をインタラクティブマップとスペクトルチャートで視覚化することで、プレイヤーが各店舗の筐体特性を確認できるようにすることを目的としています。
-
-## 主要機能
-
-- 🗺️ **インタラクティブマップ**：Leaflet.js を使用して台湾全土の筐体位置を表示
-- 📊 **スペクトルチャート**：D3.js を使用して筐体傾向分類を視覚化
-- 🌐 **多言語対応**：繁體中文、English、日本語の3言語をサポート
-- 📱 **レスポンシブデザイン**：様々な画面サイズに対応
-- 🎨 **分類ラベル**：13種類の傾向タイプに分類（あきうと、サチュ、ダイ、にゃんこ、愛言葉、ますぱぺ、警察、ラスナイ、オッズ、サウンドなど）、各タイプの範囲は重複する可能性があります
-- 🎥 **動画証拠**：各筐体にテスト動画リンクを添付可能
-
-## 技術スタック
-
-### フロントエンドフレームワーク＆ライブラリ
-
-- **Vue 3**：メインアプリケーションフレームワーク
-- **Leaflet.js**：地図インタラクション機能
-- **D3.js**：データ視覚化チャート
-- **Bootstrap 5**：UIコンポーネントとスタイル
-- **Font Awesome**：アイコン
-- **[霞鶩文楷 TC](https://github.com/lxgw/LxgwWenkaiTC)**：中国語フォント（作者：[lxgw](https://github.com/lxgw)）
-
-### プロジェクト構造
-
-```
-DivaAcTw.github.io/
-├── index.html          # メイン HTML ページ
-├── style.css           # スタイルシート
-├── data.json           # 筐体データ（位置、傾向、動画など）
-├── js/
-│   └── app.js          # Vue 3 アプリケーションロジック
-└── i18n/               # 国際化言語ファイル
-    ├── zh-TW.json      # 中国語（繁體字）
-    ├── en.json         # 英語
-    ├── ja.json         # 日本語
-    └── flags/          # 言語フラグアイコン
-```
-
-## データフォーマット
-
-### data.json 構造
-
-```json
-{
-  "metadata": {
-    "members": {
-      "admin": "責任者",
-      "testers": ["テスター1", "テスター2"],
-      "techSupport": ["技術協力者"]
-    },
-    "lastUpdated": "2025-12-31"
-  },
-  "range": [
-    {
-      "from": 0,
-      "to": 14.77,
-      "label": "あきうと台",
-      "labelKey": "acute"
-    }
-    // ……その他の範囲定義
-  ],
-  "data": [
-    {
-      "name": "店舗名",
-      "latitude": 25.0330,
-      "longitude": 121.5654,
-      "type": 42.5,
-      "videos": [
-        // 現在UIの簡潔性を考慮して動画リンクを直接表示せず、要求に応じて個別に提供する方式を採用
-        {
-          "title": "動画タイトル",
-          "url": "https://..."
-        }
-      ],
-      "evidences": [
-        {
-          "song": "楽曲名",
-          "info": "テスト情報"
-        }
-      ]
-    }
-  ]
-}
-```
-
-## 使い方
-
-### オンラインアクセス
-
-GitHub Pages の URL から直接アクセスできます（デプロイ済みの場合）。
-
-### ローカル実行
-
-1. リポジトリをクローン
-```bash
-git clone https://github.com/CCT39/DivaAcTw.github.io.git
-cd DivaAcTw.github.io
-```
-
-2. 以下のいずれかの方法でローカルサーバーを起動（外部JSONファイルの読み込みに必要）：
-
-   **方法 A：Python を使用**
-   ```bash
-   python -m http.server 8000
-   ```
-   その後ブラウザで `http://localhost:8000` を開く
-
-   **方法 B：Node.js の http-server を使用**
-   ```bash
-   npx http-server
-   ```
-   その後ブラウザで `http://localhost:8000` を開く
-
-   **方法 C：VS Code Live Server を使用（推奨）**
-   - VS Code に「Live Server」拡張機能をインストール
-   - VS Code でプロジェクトフォルダを開く
-   - `index.html` を右クリック → 「Open with Live Server」を選択
-   - ブラウザが自動的に開き、ファイル変更時に自動リロードされます
-
-## データ更新
-
-筐体データを追加または修正する場合：
-
-1. `data.json` を編集
-2. `data` 配列に店舗情報を追加
-3. 緯度・経度が正確であることを確認
-4. 筐体傾向値を設定（0–100、値が小さいほどダイ傾向、大きいほどフリーリー傾向）
-5. 前述の数値を裏付ける判定データをリストアップ（判定データと数値の対応については「連絡先」からお問い合わせください）
-6. オプション：テスト動画リンクを添付
-
-## 言語切り替え
-
-言語ファイルは `i18n/` ディレクトリに配置：
-
-- `zh-TW.json`：繁體中文（デフォルト）
-- `en.json`：English
-- `ja.json`：日本語
-
-ユーザーの言語選択は localStorage に保存され、次回訪問時に自動的に読み込まれます。
-
-## 貢献
-
-筐体テストデータや技術的な改善提案を歓迎します！
-
-## 連絡先
-
-お問い合わせ：CCT（[Eternal∞DIVA]CCT、X: @CCT_39）
-
-## ライセンス
-
-このプロジェクトは MIT ライセンスの下で公開されています。
-
-本プロジェクトはforkまたは修正が可能です。修正版は作者のオリジナル作品ではないことを明記する必要があります。
-
-## 謝辞
-
-本プロジェクトは以下の優れたオープンソースリソースを使用しています：
-- **[霞鶩文楷 TC](https://github.com/lxgw/LxgwWenkaiTC)** by [lxgw](https://github.com/lxgw) - エレガントなオープンソース中国語フォント
-
-テストデータを提供してくださったすべてのプレイヤーとコミュニティメンバーに感謝します

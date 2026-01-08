@@ -6,8 +6,8 @@ createApp({
     const defaultLang = 'zh-TW';
     const languages = [
       { code: 'zh-TW', name: '正體中文' },
-      { code: 'en', name: 'English' },
-      { code: 'ja', name: '日本語' }
+      { code: 'ja', name: '日本語' },
+      { code: 'en', name: 'English' }
     ];
     const currentLang = ref(localStorage.getItem('language') || defaultLang);
     const i18n = reactive({});
