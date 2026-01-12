@@ -105,6 +105,9 @@ createApp({
     const storeData = ref([]);
     const members = reactive({});
 
+    // Loading state
+    const isLoading = ref(true);
+
     // 手機版狀態
     const activeTab = ref('map');
     const mobilePopupData = ref(null);
@@ -582,6 +585,7 @@ createApp({
       initMap();
       await loadLanguage(currentLang.value);
       await loadData();
+      isLoading.value = false;
     });
 
     // ==================== 回傳 ====================
@@ -590,6 +594,7 @@ createApp({
       closeMobilePopup,
       currentLang,
       i18n,
+      isLoading,
       isPopupOpen,
       languages: LANGUAGES,
       members,

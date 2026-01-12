@@ -24,6 +24,14 @@
 
 <body>
   <article id="app">
+    <!-- 轉圈圈的那個 -->
+    <div v-if="isLoading" class="loading-overlay">
+      <div class="loading-spinner">
+        <i class="fa-solid fa-spinner fa-spin"></i>
+        <p>{{ i18n.loading || '載入中……' }}</p>
+      </div>
+    </div>
+
     <section class="main-card">
       <h1>{{ i18n.title }}</h1>
 
