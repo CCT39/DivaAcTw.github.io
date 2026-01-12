@@ -43,5 +43,12 @@
     "watchVideo": "觀看影片",
     "evidences": "判定資料節錄"
   },
+  "mobileTabs": {
+    "map": "地圖",
+    "spectrum": "光譜"
+  },
+  "mobilePopup": {
+    "close": "關閉"
+  },
   "dataLoadError": "載入data.json失敗，正在載入測試資料以預覽樣式。"
 }

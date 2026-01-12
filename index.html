@@ -34,7 +34,19 @@
         </button>
       </div>
 
-      <div id="container">
+      <!-- 手機版Tab切換 -->
+      <div class="mobile-tabs">
+        <button class="mobile-tab" :class="{ active: activeTab === 'map' }" @click="switchTab('map')">
+          <i class="fa-solid fa-map-location-dot"></i>
+          {{ i18n.mobileTabs?.map || '地圖' }}
+        </button>
+        <button class="mobile-tab" :class="{ active: activeTab === 'spectrum' }" @click="switchTab('spectrum')">
+          <i class="fa-solid fa-chart-bar"></i>
+          {{ i18n.mobileTabs?.spectrum || '光譜' }}
+        </button>
+      </div>
+
+      <div id="container" :class="{ 'show-spectrum': activeTab === 'spectrum', 'show-map': activeTab === 'map' }">
         <div id="spectrum"></div>
         <div id="map"></div>
 
@@ -46,6 +58,18 @@
             <i class="fa-solid fa-users"></i>
           </button>
         </div>
+      </div>
+
+      <!-- 手機版底部彈出面板 -->
+      <div class="mobile-popup-overlay" :class="{ show: mobilePopupData }" @click="closeMobilePopup"></div>
+      <div class="mobile-popup-sheet" :class="{ show: mobilePopupData }">
+        <div class="mobile-popup-header">
+          <div class="mobile-popup-drag-handle"></div>
+          <button class="mobile-popup-close" @click="closeMobilePopup">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="mobile-popup-content" v-html="mobilePopupHtml"></div>
       </div>
     </section>
     <section class="modal fade" id="infoModal" tabindex="-1">

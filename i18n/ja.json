@@ -43,5 +43,12 @@
     "watchVideo": "動画を見る",
     "evidences": "判定情報抜粋"
   },
+  "mobileTabs": {
+    "map": "地図",
+    "spectrum": "スペクトル"
+  },
+  "mobilePopup": {
+    "close": "閉じる"
+  },
   "dataLoadError": "data.jsonの読み込みに失敗しました。プレビュー用のダミーデータを読み込んでいます。"
 }

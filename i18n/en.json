@@ -43,5 +43,12 @@
     "watchVideo": "Watch Video",
     "evidences": "Excerpts from test results"
   },
+  "mobileTabs": {
+    "map": "Map",
+    "spectrum": "Spectrum"
+  },
+  "mobilePopup": {
+    "close": "Close"
+  },
   "dataLoadError": "Loading data.json failed, loading dummy data for preview styling."
 }
