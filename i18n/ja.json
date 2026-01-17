@@ -21,7 +21,8 @@
   },
   "buttons": {
     "info": "チャート情報",
-    "members": "プロジェクトメンバー"
+    "members": "プロジェクトメンバー",
+    "privacy": "プライバシーポリシー"
   },
   "modals": {
     "info": {

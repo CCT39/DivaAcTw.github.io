@@ -21,7 +21,8 @@
   },
   "buttons": {
     "info": "圖表資訊",
-    "members": "計畫成員"
+    "members": "計畫成員",
+    "privacy": "隱私權政策"
   },
   "modals": {
     "info": {

@@ -647,3 +647,97 @@ h1 {
     font-size: 1.2rem;
     color: var(--text-main);
 }
+
+/* ----------------------------------------------------------
+   Footer
+   ----------------------------------------------------------
+*/
+#app {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-footer {
+    width: 100%;
+    max-width: 1200px;
+    padding: 15px 20px;
+    background-color: var(--bg-card);
+    border-top: 1px solid var(--border-colour);
+    text-align: center;
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-soft);
+    flex: 0 0 auto;
+}
+
+.footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 1px 12px;
+    color: var(--primary-colour);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: var(--radius-btn);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.footer-link:hover {
+    background-color: var(--primary-colour);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(57, 197, 187, 0.3);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.footer-link i {
+    font-size: 1.1em;
+}
+
+/* 電腦版 RWD 調整 */
+@media (max-width: 1200px) {
+    .app-footer {
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: calc(100% - 40px);
+    }
+}
+
+/* 平板版 RWD 調整 */
+@media (max-width: 768px) {
+    .app-footer {
+        padding: 12px 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: calc(100% - 20px);
+        border-radius: 0 0 12px 12px;
+    }
+
+    .footer-link {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* 手機版 RWD 調整 */
+@media (max-width: 480px) {
+    .app-footer {
+        padding: 10px 10px;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .footer-link {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+        width: 100%;
+        justify-content: center;
+    }
+}

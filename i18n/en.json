@@ -21,7 +21,8 @@
   },
   "buttons": {
     "info": "Chart Info",
-    "members": "Team Members"
+    "members": "Team Members",
+    "privacy": "Privacy Policy"
   },
   "modals": {
     "info": {
